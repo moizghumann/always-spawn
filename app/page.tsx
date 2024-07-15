@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { UploadOutlined, UserOutlined, VideoCameraOutlined, SearchOutlined, BellOutlined, AntDesignOutlined } from '@ant-design/icons';
-import { Avatar, Input, Layout, Menu, Dropdown, theme, Row, Col, Card } from 'antd';
+import { Avatar, Input, Layout, Menu, Dropdown, theme, Row, Col, Card, Badge } from 'antd';
 import backlog from '/assets/icons/backlog.svg'
 import Info from './components/Info';
 import DetailsCard from './components/DetailsCard';
@@ -57,7 +57,10 @@ const App: React.FC = () => {
             <div>
               <Input placeholder="default size" prefix={<SearchOutlined />} />
             </div>
-            <BellOutlined size={100} />
+            <Badge size='small' count={99} overflowCount={10}>
+              <BellOutlined style={{ fontSize: '20px' }} />
+            </Badge>
+
             <Dropdown overlay={menu} trigger={['click']}>
               <div style={{ marginBottom: 7 }}>
                 <Avatar
@@ -78,7 +81,7 @@ const App: React.FC = () => {
               borderRadius: borderRadiusLG,
             }}
           >
-            <div style={{ width: '100%' }}>
+            <div style={{ width: '100%', paddingLeft: 40 }}>
               <Row gutter={0}>
                 {/* Parent Column 1 (40%) */}
                 <Col span={10}>

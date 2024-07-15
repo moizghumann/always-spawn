@@ -5,8 +5,7 @@ const styles = {
         borderRadius: '14px',
         overflow: 'hidden',
         maxWidth: '950px',
-        height: '334px',
-        marginBottom: 10,
+        height: '352px',
         boxShadow: '0 2px 8px rgba(0, 0, 0, 0.15)'
     },
     cardBody: {
@@ -41,6 +40,7 @@ const styles = {
         color: '#f56a00',
         fontSize: '14px',
         fontWeight: 'bold',
+        marginBottom: 40
 
     },
     date: {
@@ -60,7 +60,7 @@ const styles = {
         height: '240px',
         width: '1px',
         backgroundColor: '#ccc',
-        bottom: -52,
+        bottom: -60,
     }
 };
 
@@ -98,9 +98,9 @@ const SalesForecast = () => (
         </div >
         <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: 5, color: '#F56A01' }}>
             <div style={{ marginLeft: 30, marginTop: 4 }}>Of deals in the <br />works right now</div>
-            <div style={{ marginLeft: 70 }}>after <br /><span style={{ fontSize: 20, fontWeight: 'bold' }}>20 days</span></div>
-            <div style={{ marginLeft: 115 }}>after <br /><span style={{ fontSize: 20, fontWeight: 'bold' }}>40 days</span></div>
-            <div style={{ marginLeft: 120 }}>after <br /><span style={{ fontSize: 20, fontWeight: 'bold' }}>60 days</span></div>
+            <div style={{ marginLeft: 80 }}>after <br /><span style={{ fontSize: 20, fontWeight: 'bold' }}>20 days</span></div>
+            <div style={{ marginLeft: 125 }}>after <br /><span style={{ fontSize: 20, fontWeight: 'bold' }}>40 days</span></div>
+            <div style={{ marginLeft: 127 }}>after <br /><span style={{ fontSize: 20, fontWeight: 'bold' }}>60 days</span></div>
         </div>
     </Card >
 );

@@ -2,6 +2,7 @@ import { Avatar, Badge } from 'antd';
 import { AntDesignOutlined } from '@ant-design/icons';
 import React from 'react'
 import Image from 'next/image';
+import teams from '../../assets/icons/team.svg'
 
 interface TeamProp {
     name: string;
@@ -26,7 +27,7 @@ const TeamComponent = ({ name, rating, members }: TeamProp) => {
                     <h5 style={{ fontWeight: 'bold' }}>Violet Robbins</h5>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 5 }}>
-                    <Image src="/assets/icons/team.svg"
+                    <Image src={teams}
                         height={20}
                         width={20}
                         alt='teams icon' />
