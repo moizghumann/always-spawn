@@ -1,0 +1,5 @@
+.main-div {
+    display: grid;
+    grid-template-rows: 16.666666667% 16.666666667% 16.666666667% 16.666666667% 16.666666667% 16.666666667%;
+    grid-template-columns: 40% 30% 30%;
+}
